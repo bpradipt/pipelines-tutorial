@@ -20,6 +20,7 @@ spec:
       spec:
         accessModes:
           - ReadWriteOnce
+        storageClassName: local    
         resources:
           requests:
             storage: 500Mi
