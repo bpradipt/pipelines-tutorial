@@ -123,6 +123,7 @@ demo.run() {
     -p deployment-name=pipelines-vote-api \
     -p git-url=https://github.com/openshift/pipelines-vote-api.git \
     -p IMAGE=image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/pipelines-vote-api \
+    --pod-template template.yaml \
     --use-param-defaults \
     --showlog=true
 
@@ -132,6 +133,7 @@ demo.run() {
     -p deployment-name=pipelines-vote-ui \
     -p git-url=https://github.com/openshift/pipelines-vote-ui.git \
     -p IMAGE=image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/pipelines-vote-ui \
+    --pod-template template.yaml \
     --use-param-defaults \
     --showlog=true
 
